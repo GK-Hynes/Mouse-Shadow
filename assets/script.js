@@ -8,7 +8,7 @@ function shadow(e) {
   const { offsetWidth: width, offsetHeight: height } = hero;
   let { offsetX: x, offsetY: y } = e;
 
-  if (this !== event.target) {
+  if (this !== e.target) {
     y = y + e.target.offsetTop;
   }
 
